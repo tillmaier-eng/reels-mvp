@@ -1,0 +1,14 @@
+# Copy this file to "local.properties" (which is gitignored) and point it at
+# your local Android SDK installation. Android Studio normally generates this
+# automatically the first time you open the project, so in most cases you
+# don't need to create it by hand.
+#
+# Windows example:
+# sdk.dir=C\:\\Users\\YourName\\AppData\\Local\\Android\\Sdk
+#
+# macOS example:
+# sdk.dir=/Users/YourName/Library/Android/sdk
+#
+# Linux example:
+# sdk.dir=/home/YourName/Android/Sdk
+sdk.dir=/path/to/your/Android/sdk

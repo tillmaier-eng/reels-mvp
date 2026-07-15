@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed for the YouTube IFrame Player (loads player.js from youtube.com
+         inside a WebView) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- No READ_MEDIA_VIDEO / READ_EXTERNAL_STORAGE permission is declared:
+         local videos are added exclusively through the Android Photo Picker
+         (ActivityResultContracts.PickMultipleVisualMedia), which grants
+         scoped, permission-less access to only the files the user picks. -->
+
+    <application
+        android:name=".ReelsApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Reels"
+        android:hardwareAccelerated="true"
+        android:largeHeap="false"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden|screenLayout"
+            android:theme="@style/Theme.Reels">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
